@@ -1,4 +1,217 @@
-.div {
+@font-face {
+  font-family: Roboto;
+   src: url("fonts/Roboto-Regular.ttf");
+ }
+
+
+:root {
+    --dark-gray-color: #ffffff;
+    --ligth-gray-color: #d67112;
+  }
+  
+  html {
+    scroll-behavior: smooth; 
+  }
+
+  body {
+    box-sizing: border-box;
+    background-color: #d67112;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    margin: 0; padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .container-centered {
+    margin: 50px auto;
+    width:1024px;
+    font-size: 15px;
+    line-height: 1.3;
+    background-color: #ffffff;
+    box-shadow: 10px 10px 40px -1px rgba(0, 0, 0, 0.42);
+  }
+  
+  .two-columns {
+    display:flex;
+  }
+  
+  .left-column {
+    width: 40%;
+    color:#d67112;
+    background-color:rgb(255, 255, 255);
+  }
+  
+  .right-column {
+    width: 60%;
+    padding: 50px;
+    margin-top: 75px;
+  }
+  
+  header {
+    padding: 70px;
+    text-align:center;
+    background-color: #dfbcbc;
+  }
+  
+  header img {
+    margin-bottom: 20px;
+    border: 5px solid;
+  }
+  
+  header h1 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 2px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  header h4 {
+    margin-bottom: 20px;
+    letter-spacing: 5px;
+  }
+  
+  main {
+    padding: 10px 50px;
+  }
+  
+  main h4 {
+    width: 136px;
+    margin: 40px auto 20px;
+    padding: 5px 20px;
     text-align: center;
-    background-color: aquamarine;
-}
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #b48f8f;
+    background-color:#ffffff;
+  }
+  
+  main .contacts h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    transform: translate(0, -50%);
+  }
+  
+  main li {
+    margin-bottom: 3px;
+  }
+  
+  
+  .contacts li p {
+    display:inline-flex;
+    vertical-align:top;
+  }
+  
+  .contacts a {
+    text-decoration:none;
+    color: #d67112;
+  }
+  
+  main :not(.contacts) ul {
+    list-style-type:circle;
+    margin-left: 0px;
+  }
+  
+  .language-name {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  
+  .left-column .sub-header {
+    display: flex;
+    margin-top: 310px;
+    margin-bottom: 105px;
+  }
+  
+  .right-column .about-myself .sub-header {
+    margin-top: 0;
+  }
+  
+  .about-myself p {
+    margin-bottom: 10px;
+    margin-left: 25px;
+  }
+  
+  .about-myself {
+    margin-bottom: 0;
+    margin-right: 10px;
+    margin-left: 50px;
+  }
+  
+  .right-column h4 {
+    flex: 1;
+    vertical-align: middle;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: normal;
+    color:#d67112;
+    border-bottom: 2px solid var(--ligth-gray-color);
+  }
+  
+  .right-column p {
+    color:#000000;
+  }
+
+  
+  .courses ul {
+    list-style-type: disc;
+    margin-left: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .courses li {
+    margin-bottom: 10px;
+    color:#000000;
+  }
+  
+  .education {
+    list-style-type: disc;
+    margin-left: 5px;
+    margin-bottom: 10px;
+  }
+
+  .code-example p {
+    margin-left: 25px;
+  }
+  
+  pre {
+    margin-left: 0px;
+    margin-top: 20px;
+    padding-left: 30px;
+    font-family: monospace;
+    font-size: 1.2rem;
+    background-color: #e09634;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: 0.8rem;
+    color: #ffffff;
+    background-color: var(--dark-gray-color);
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: #000000;
+  }
+
+  footer p {
+    color: #000000;
+    font-size: 16px;
+  }
+  
+  footer .github-image {
+    margin-right: 10px;
+  }
+  
+  .github-image {
+    display: flex;
+    align-items:flex-start;
+  }

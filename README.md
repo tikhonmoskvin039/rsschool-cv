@@ -1,4 +1,4 @@
-# rsschool-cv
+# rsschool-cv ...
 
 https://github.com/tikhonmoskvin039/rsschool-cv/blob/gh-pages/cv.md
 
